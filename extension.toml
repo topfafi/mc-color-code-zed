@@ -8,5 +8,5 @@ repository = "https://github.com/topfafi/mc-color-code-zed"
 
 [grammars.mccolor]
 repository = "https://github.com/topfafi/mc-color-code-zed"
-commit = "5a963acd50364c0ef93268265aefb1fa8b8e1390"
+commit = "d59cb46df9344e79f59d2dedcc5c4c3a3969da91"
 path = "tree-sitter-mccolor"
