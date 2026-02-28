@@ -1,36 +1,6 @@
 [
   {
-    "type": "color_aqua",
-    "named": true,
-    "fields": {}
-  },
-  {
-    "type": "color_green",
-    "named": true,
-    "fields": {}
-  },
-  {
-    "type": "color_light_purple",
-    "named": true,
-    "fields": {}
-  },
-  {
-    "type": "color_minecoin",
-    "named": true,
-    "fields": {}
-  },
-  {
-    "type": "color_red",
-    "named": true,
-    "fields": {}
-  },
-  {
-    "type": "color_white",
-    "named": true,
-    "fields": {}
-  },
-  {
-    "type": "color_yellow",
+    "type": "body_text",
     "named": true,
     "fields": {}
   },
@@ -40,34 +10,441 @@
     "fields": {}
   },
   {
-    "type": "fmt_bold",
+    "type": "seg_aqua",
     "named": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "body_text",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
   },
   {
-    "type": "fmt_italic",
+    "type": "seg_black",
     "named": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "body_text",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
   },
   {
-    "type": "fmt_obfuscate",
+    "type": "seg_blue",
     "named": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "body_text",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
   },
   {
-    "type": "fmt_reset",
+    "type": "seg_bold",
     "named": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "body_text",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
   },
   {
-    "type": "fmt_strike",
+    "type": "seg_dark_aqua",
     "named": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "body_text",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
   },
   {
-    "type": "fmt_underline",
+    "type": "seg_dark_blue",
     "named": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "body_text",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "seg_dark_gray",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "body_text",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "seg_dark_green",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "body_text",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "seg_dark_purple",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "body_text",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "seg_dark_red",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "body_text",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "seg_gold",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "body_text",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "seg_gray",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "body_text",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "seg_green",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "body_text",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "seg_italic",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "body_text",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "seg_light_purple",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "body_text",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "seg_minecoin",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "body_text",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "seg_obfuscate",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "body_text",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "seg_red",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "body_text",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "seg_reset",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "body_text",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "seg_strike",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "body_text",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "seg_underline",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "body_text",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "seg_white",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "body_text",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "seg_yellow",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "body_text",
+          "named": true
+        },
+        {
+          "type": "variable",
+          "named": true
+        }
+      ]
+    }
   },
   {
     "type": "source_file",
@@ -79,103 +456,103 @@
       "required": false,
       "types": [
         {
-          "type": "color_aqua",
-          "named": true
-        },
-        {
-          "type": "color_black",
-          "named": true
-        },
-        {
-          "type": "color_blue",
-          "named": true
-        },
-        {
-          "type": "color_dark_aqua",
-          "named": true
-        },
-        {
-          "type": "color_dark_blue",
-          "named": true
-        },
-        {
-          "type": "color_dark_gray",
-          "named": true
-        },
-        {
-          "type": "color_dark_green",
-          "named": true
-        },
-        {
-          "type": "color_dark_purple",
-          "named": true
-        },
-        {
-          "type": "color_dark_red",
-          "named": true
-        },
-        {
-          "type": "color_gold",
-          "named": true
-        },
-        {
-          "type": "color_gray",
-          "named": true
-        },
-        {
-          "type": "color_green",
-          "named": true
-        },
-        {
-          "type": "color_light_purple",
-          "named": true
-        },
-        {
-          "type": "color_minecoin",
-          "named": true
-        },
-        {
-          "type": "color_red",
-          "named": true
-        },
-        {
-          "type": "color_white",
-          "named": true
-        },
-        {
-          "type": "color_yellow",
-          "named": true
-        },
-        {
           "type": "escape_section",
           "named": true
         },
         {
-          "type": "fmt_bold",
-          "named": true
-        },
-        {
-          "type": "fmt_italic",
-          "named": true
-        },
-        {
-          "type": "fmt_obfuscate",
-          "named": true
-        },
-        {
-          "type": "fmt_reset",
-          "named": true
-        },
-        {
-          "type": "fmt_strike",
-          "named": true
-        },
-        {
-          "type": "fmt_underline",
-          "named": true
-        },
-        {
           "type": "newline",
+          "named": true
+        },
+        {
+          "type": "seg_aqua",
+          "named": true
+        },
+        {
+          "type": "seg_black",
+          "named": true
+        },
+        {
+          "type": "seg_blue",
+          "named": true
+        },
+        {
+          "type": "seg_bold",
+          "named": true
+        },
+        {
+          "type": "seg_dark_aqua",
+          "named": true
+        },
+        {
+          "type": "seg_dark_blue",
+          "named": true
+        },
+        {
+          "type": "seg_dark_gray",
+          "named": true
+        },
+        {
+          "type": "seg_dark_green",
+          "named": true
+        },
+        {
+          "type": "seg_dark_purple",
+          "named": true
+        },
+        {
+          "type": "seg_dark_red",
+          "named": true
+        },
+        {
+          "type": "seg_gold",
+          "named": true
+        },
+        {
+          "type": "seg_gray",
+          "named": true
+        },
+        {
+          "type": "seg_green",
+          "named": true
+        },
+        {
+          "type": "seg_italic",
+          "named": true
+        },
+        {
+          "type": "seg_light_purple",
+          "named": true
+        },
+        {
+          "type": "seg_minecoin",
+          "named": true
+        },
+        {
+          "type": "seg_obfuscate",
+          "named": true
+        },
+        {
+          "type": "seg_red",
+          "named": true
+        },
+        {
+          "type": "seg_reset",
+          "named": true
+        },
+        {
+          "type": "seg_strike",
+          "named": true
+        },
+        {
+          "type": "seg_underline",
+          "named": true
+        },
+        {
+          "type": "seg_white",
+          "named": true
+        },
+        {
+          "type": "seg_yellow",
           "named": true
         },
         {
@@ -194,6 +571,11 @@
     }
   },
   {
+    "type": "text",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "unknown_code",
     "named": true,
     "fields": {}
@@ -208,51 +590,7 @@
     "named": false
   },
   {
-    "type": "color_black",
-    "named": true
-  },
-  {
-    "type": "color_blue",
-    "named": true
-  },
-  {
-    "type": "color_dark_aqua",
-    "named": true
-  },
-  {
-    "type": "color_dark_blue",
-    "named": true
-  },
-  {
-    "type": "color_dark_gray",
-    "named": true
-  },
-  {
-    "type": "color_dark_green",
-    "named": true
-  },
-  {
-    "type": "color_dark_purple",
-    "named": true
-  },
-  {
-    "type": "color_dark_red",
-    "named": true
-  },
-  {
-    "type": "color_gold",
-    "named": true
-  },
-  {
-    "type": "color_gray",
-    "named": true
-  },
-  {
     "type": "newline",
-    "named": true
-  },
-  {
-    "type": "text",
     "named": true
   },
   {
@@ -261,6 +599,46 @@
   },
   {
     "type": "§",
+    "named": false
+  },
+  {
+    "type": "§0",
+    "named": false
+  },
+  {
+    "type": "§1",
+    "named": false
+  },
+  {
+    "type": "§2",
+    "named": false
+  },
+  {
+    "type": "§3",
+    "named": false
+  },
+  {
+    "type": "§4",
+    "named": false
+  },
+  {
+    "type": "§5",
+    "named": false
+  },
+  {
+    "type": "§6",
+    "named": false
+  },
+  {
+    "type": "§7",
+    "named": false
+  },
+  {
+    "type": "§8",
+    "named": false
+  },
+  {
+    "type": "§9",
     "named": false
   },
   {

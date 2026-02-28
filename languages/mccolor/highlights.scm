@@ -1,44 +1,73 @@
-; Minecraft Bedrock color & formatting codes
-; Maps each tree-sitter node to a highlight name used by the theme.
+; Minecraft Bedrock color/format codes → standard Zed highlight names.
+; Using built-in names means colors show up in every theme automatically.
 
-; Colors §0-§f
-(color_black)       @color.black
-(color_dark_blue)   @color.dark_blue
-(color_dark_green)  @color.dark_green
-(color_dark_aqua)   @color.dark_aqua
-(color_dark_red)    @color.dark_red
-(color_dark_purple) @color.dark_purple
-(color_gold)        @color.gold
-(color_gray)        @color.gray
-(color_dark_gray)   @color.dark_gray
-(color_blue)        @color.blue
-(color_green)       @color.green
-(color_aqua)        @color.aqua
-(color_red)         @color.red
-(color_light_purple)@color.light_purple
-(color_yellow)      @color.yellow
-(color_white)       @color.white
+; §0 black  → dimmed constant
+(seg_black)       @constant
 
-; Bedrock exclusive
-(color_minecoin)    @color.minecoin
+; §1 dark blue → type (blue in most themes)
+(seg_dark_blue)   @type
 
-; Formatting
-(fmt_obfuscate)     @format.obfuscated
-(fmt_bold)          @format.bold
-(fmt_strike)        @format.strikethrough
-(fmt_underline)     @format.underline
-(fmt_italic)        @format.italic
-(fmt_reset)         @format.reset
+; §2 dark green → comment (green)
+(seg_dark_green)  @comment
 
-; Variables like ${player_name} aren't affected by color codes
-(variable)          @variable
+; §3 dark aqua → string.special (teal)
+(seg_dark_aqua)   @string.special
 
-; §§ shows a literal §
-(escape_section)    @escape
+; §4 dark red → string (red)
+(seg_dark_red)    @string
 
-; Unrecognized § codes just render as plain text
-(unknown_code)      @text
+; §5 dark purple → keyword (purple in many themes)
+(seg_dark_purple) @keyword
 
-; Everything else
-(text)              @text
-(newline)           @text
+; §6 gold → number (yellow/orange)
+(seg_gold)        @number
+
+; §7 gray → comment (muted)
+(seg_gray)        @comment
+
+; §8 dark gray → very muted
+(seg_dark_gray)   @punctuation.delimiter
+
+; §9 blue → type
+(seg_blue)        @type
+
+; §a green → property (green)
+(seg_green)       @property
+
+; §b aqua → tag (cyan)
+(seg_aqua)        @tag
+
+; §c red → keyword (bright red)
+(seg_red)         @keyword
+
+; §d light purple → emphasis (magenta)
+(seg_light_purple) @attribute
+
+; §e yellow → number (bright yellow)
+(seg_yellow)      @number
+
+; §f white → plain text
+(seg_white)       @text.literal
+
+; §g minecoin gold (Bedrock only) → function (warm gold)
+(seg_minecoin)    @function
+
+; Formatting — bold uses strong emphasis, others map to available names
+(seg_bold)        @emphasis.strong
+(seg_italic)      @emphasis
+(seg_underline)   @link_text
+(seg_strike)      @comment
+(seg_obfuscate)   @string.escape
+(seg_reset)       @punctuation
+
+; ${variable} stands out from colored text
+(variable)        @variable.special
+
+; §§ → escaped literal §
+(escape_section)  @string.escape
+
+; Unknown §x code — just plain text, no highlight
+(unknown_code)    @text
+
+(text)    @text
+(newline) @text
