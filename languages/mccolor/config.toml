@@ -1,0 +1,6 @@
+name = "MCColor"
+grammar = "mccolor"
+path_suffixes = ["mctext", "mccolor", "mctxt"]
+tab_size = 2
+hard_tabs = false
+word_characters = ["§"]

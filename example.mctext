@@ -1,0 +1,15 @@
+§eHello ${player_name} §aWelcome to the server!
+§cWarning: §4You are about to enter the §5Nether§r - back to default!
+§6Gold: §e${gold_amount} §7| §bDiamonds: §3${diamond_count}
+§lBold text §oItalic text §nUnderlined text §mStrikethrough
+§9Current level: §a${level} §7/ §e${max_level}
+§dShop: §eBuy items with §6${money} §egold
+§0Black §1DarkBlue §2DarkGreen §3DarkAqua §4DarkRed §5DarkPurple §6Gold §7Gray
+§8DarkGray §9Blue §aGreen §bAqua §cRed §dPink §eYellow §fWhite
+§gMinecoin Gold (Bedrock Exclusive)
+§kObfuscated text §rReset to normal
+§EUppercase Yellow §CUppercase Red §AUppercase Green
+§LUppercase Bold §OUppercase Italic §RUppercase Reset
+§§ this is an escaped section sign
+Normal text without any color codes
+${standalone_variable} is shown differently

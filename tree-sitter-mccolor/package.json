@@ -1,0 +1,33 @@
+{
+  "name": "tree-sitter-mccolor",
+  "version": "1.0.0",
+  "description": "Tree-sitter grammar for Minecraft Bedrock color codes",
+  "main": "bindings/node",
+  "keywords": [
+    "tree-sitter",
+    "minecraft",
+    "color-codes"
+  ],
+  "author": "mccolor",
+  "license": "MIT",
+  "dependencies": {
+    "nan": "^2.18.0"
+  },
+  "devDependencies": {
+    "tree-sitter-cli": "^0.22.6"
+  },
+  "scripts": {
+    "generate": "tree-sitter generate",
+    "test": "tree-sitter test"
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.mccolor",
+      "file-types": [
+        "mctext",
+        "mccolor",
+        "mctxt"
+      ]
+    }
+  ]
+}

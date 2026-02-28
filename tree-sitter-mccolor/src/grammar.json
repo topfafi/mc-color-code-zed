@@ -1,0 +1,399 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/grammar.schema.json",
+  "name": "mccolor",
+  "rules": {
+    "source_file": {
+      "type": "REPEAT",
+      "content": {
+        "type": "SYMBOL",
+        "name": "_token"
+      }
+    },
+    "_token": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "color_black"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "color_dark_blue"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "color_dark_green"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "color_dark_aqua"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "color_dark_red"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "color_dark_purple"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "color_gold"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "color_gray"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "color_dark_gray"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "color_blue"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "color_green"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "color_aqua"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "color_red"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "color_light_purple"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "color_yellow"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "color_white"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "color_minecoin"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "fmt_obfuscate"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "fmt_bold"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "fmt_strike"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "fmt_underline"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "fmt_italic"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "fmt_reset"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "variable"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "escape_section"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "unknown_code"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "text"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "newline"
+        }
+      ]
+    },
+    "color_black": {
+      "type": "STRING",
+      "value": "§0"
+    },
+    "color_dark_blue": {
+      "type": "STRING",
+      "value": "§1"
+    },
+    "color_dark_green": {
+      "type": "STRING",
+      "value": "§2"
+    },
+    "color_dark_aqua": {
+      "type": "STRING",
+      "value": "§3"
+    },
+    "color_dark_red": {
+      "type": "STRING",
+      "value": "§4"
+    },
+    "color_dark_purple": {
+      "type": "STRING",
+      "value": "§5"
+    },
+    "color_gold": {
+      "type": "STRING",
+      "value": "§6"
+    },
+    "color_gray": {
+      "type": "STRING",
+      "value": "§7"
+    },
+    "color_dark_gray": {
+      "type": "STRING",
+      "value": "§8"
+    },
+    "color_blue": {
+      "type": "STRING",
+      "value": "§9"
+    },
+    "color_green": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "§a"
+        },
+        {
+          "type": "STRING",
+          "value": "§A"
+        }
+      ]
+    },
+    "color_aqua": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "§b"
+        },
+        {
+          "type": "STRING",
+          "value": "§B"
+        }
+      ]
+    },
+    "color_red": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "§c"
+        },
+        {
+          "type": "STRING",
+          "value": "§C"
+        }
+      ]
+    },
+    "color_light_purple": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "§d"
+        },
+        {
+          "type": "STRING",
+          "value": "§D"
+        }
+      ]
+    },
+    "color_yellow": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "§e"
+        },
+        {
+          "type": "STRING",
+          "value": "§E"
+        }
+      ]
+    },
+    "color_white": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "§f"
+        },
+        {
+          "type": "STRING",
+          "value": "§F"
+        }
+      ]
+    },
+    "color_minecoin": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "§g"
+        },
+        {
+          "type": "STRING",
+          "value": "§G"
+        }
+      ]
+    },
+    "fmt_obfuscate": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "§k"
+        },
+        {
+          "type": "STRING",
+          "value": "§K"
+        }
+      ]
+    },
+    "fmt_bold": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "§l"
+        },
+        {
+          "type": "STRING",
+          "value": "§L"
+        }
+      ]
+    },
+    "fmt_strike": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "§m"
+        },
+        {
+          "type": "STRING",
+          "value": "§M"
+        }
+      ]
+    },
+    "fmt_underline": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "§n"
+        },
+        {
+          "type": "STRING",
+          "value": "§N"
+        }
+      ]
+    },
+    "fmt_italic": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "§o"
+        },
+        {
+          "type": "STRING",
+          "value": "§O"
+        }
+      ]
+    },
+    "fmt_reset": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "§r"
+        },
+        {
+          "type": "STRING",
+          "value": "§R"
+        }
+      ]
+    },
+    "variable": {
+      "type": "PREC",
+      "value": 2,
+      "content": {
+        "type": "SEQ",
+        "members": [
+          {
+            "type": "STRING",
+            "value": "${"
+          },
+          {
+            "type": "PATTERN",
+            "value": "[^}]+"
+          },
+          {
+            "type": "STRING",
+            "value": "}"
+          }
+        ]
+      }
+    },
+    "escape_section": {
+      "type": "PREC",
+      "value": 3,
+      "content": {
+        "type": "STRING",
+        "value": "§§"
+      }
+    },
+    "unknown_code": {
+      "type": "PREC",
+      "value": -1,
+      "content": {
+        "type": "SEQ",
+        "members": [
+          {
+            "type": "STRING",
+            "value": "§"
+          },
+          {
+            "type": "PATTERN",
+            "value": "[^0-9a-gA-Gk-oK-OrR§\\n\\r$]"
+          }
+        ]
+      }
+    },
+    "text": {
+      "type": "PATTERN",
+      "value": "[^§$\\n\\r]+|\\$[^{]|\\$"
+    },
+    "newline": {
+      "type": "PATTERN",
+      "value": "\\r?\\n"
+    }
+  },
+  "extras": [],
+  "conflicts": [],
+  "precedences": [],
+  "externals": [],
+  "inline": [],
+  "supertypes": []
+}

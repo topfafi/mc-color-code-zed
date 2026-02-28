@@ -1,0 +1,11 @@
+id = "mc-color-code"
+name = "Minecraft Bedrock Color Codes"
+description = "Syntax highlighting for Minecraft Bedrock Edition color codes (§ section sign formatting). Supports all 16 colors (§0-§f), Minecoin Gold (§g), formatting codes (§l, §o, §n, §m, §k, §r), and variable interpolation (${var})."
+version = "1.0.0"
+schema_version = 1
+authors = ["topfafi"]
+repository = "https://github.com/topfafi/mc-color-code-zed"
+
+[grammars.mccolor]
+repository = "https://github.com/topfafi/mc-color-code-zed"
+commit = "main"
